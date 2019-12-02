@@ -9,7 +9,7 @@
 
 using namespace std;
 
-void encode(string_view filename, std::vector<unsigned char>& image, unsigned width, unsigned height) {
+void encode(string_view filename, std::vector<unsigned char>& image, unsigned width, unsigned  height) {
     unsigned error = lodepng::encode(filename.data(), image, width, height);
     if (error) {
         std::cout << "encoder error " << error << ": " << lodepng_error_text(error) << std::endl;

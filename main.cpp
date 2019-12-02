@@ -19,9 +19,9 @@ int main()
 
     auto image = decode("../logo_spiderman.png",w,h);
 
-    Rotar(image,w,h);
+    Rotar("../logo_spiderman1.png",image,w,h);
 
-    encode("../logo_spiderman1.png",image,w,h);
+    //encode("../logo_spiderman1.png",image,w,h);
 
 //    auto image = decode("../in.png",w,h);
 //    auto t1 = thread([&image, &w, &h]{red_filter(image,w,h);});
