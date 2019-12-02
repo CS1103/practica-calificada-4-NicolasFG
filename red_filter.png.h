@@ -27,9 +27,8 @@ void red_filter(vector<unsigned char> vec ,  unsigned int w, unsigned int h)
             image2.push_back(b);
             image2.push_back(a);
         }
-        encode("../Red_filter.png", image2, w, h);
     }
-
+    encode("../Red_filter.png", image2, w, h);
 }
 
 

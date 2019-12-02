@@ -10,7 +10,7 @@
 #include "green_filter.png.h"
 #include "blue_filter.png.h"
 
-void blue_filter(vector<unsigned char> vec ,  unsigned int w, unsigned int h)
+void blue_filter( vector<unsigned char> vec ,  unsigned int w, unsigned int h)
 {
     vector<unsigned char> image2;
     for (size_t i = 0; i < h; i++)
@@ -26,8 +26,9 @@ void blue_filter(vector<unsigned char> vec ,  unsigned int w, unsigned int h)
                 image2.push_back(b);
                 image2.push_back(a);
         }
-        encode("../Blue_filter.png", image2, w, h);
+
     }
+    encode("../Blue_filter.png", image2, w, h);
 }
 
 #endif //PC4_BLUE_FILTER_PNG_H
